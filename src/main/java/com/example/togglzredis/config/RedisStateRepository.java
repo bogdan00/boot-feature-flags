@@ -49,6 +49,8 @@ public class RedisStateRepository implements StateRepository {
                 }
             }
             return featureState;
+        } catch (Exception e) {
+            return null;
         }
     }
 
